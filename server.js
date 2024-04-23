@@ -10,10 +10,14 @@ const port = process.env.PORT || 8000;
 app.use(cors())
 app.use(express.json())
 
+//file imports
+import testroute  from './routes/testRoute.js'
+
 //Routes
+app.use('/api/v1/test', testroute)
 
 app.get('/', (req, res) => {
-  res.send('Hello, world!');
+  res.send('Resturant Backend Website is Working');
 });
 
 app.listen(port, () => {
