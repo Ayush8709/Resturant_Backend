@@ -1,2 +1,3 @@
 get testurl :- http://localhost:5000/api/v1/test/testUser
 post sigup url:- http://localhost:5000/api/v1/auth/register 
+post login url:- http://localhost:5000/api/v1/auth/login 

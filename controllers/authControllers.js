@@ -42,5 +42,43 @@ const authController = async (req, res) => {
     }
 };
 
+//Login
 
-export default authController
+const loginController =async (req, res)=>{
+    try {
+        const {email, password}= req.body
+
+        //validation
+        if(!email || !password){
+            return res.status(500).send({
+                success:false,
+                message:"Please provide valid email or password"
+            })
+        }
+
+        //check user
+        const user = await userModel.findOne({email: email, password:password})
+        if(!user){
+            return res.status(404).send({
+                success:false,
+                message:'please enter valid email and password'
+            })
+        }
+
+        //if user login then send this message
+        res.status(200).send({
+            success:true,
+            message:'Login successfull',
+            user
+        })
+    } catch (error) {
+        console.log('Not Logiin')
+        res.status(500).send(({
+            success:false,
+            message:"User Not Login"
+        }))
+    }
+}
+
+
+export { authController , loginController }
