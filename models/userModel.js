@@ -1,44 +1,41 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-    userName: {
-        type: String,
-        required: [true, "username must be reauired"]
-    },
-
-    email: {
-        type: String,
-        required: [trud, 'email must be reauired'],
-        unique: true
-    },
-
-    password: {
-        type: String,
-        required: [true, "password must be required"]
-    },
-
-    addressh: {
-        type: Array,
-
-    },
-
-    phone: {
-        type: String,
-        required: [true, "phone number must be required"]
-    },
-
-    usertype: {
-        type: String,
-        required: [true, 'user type is required'],
-        default: 'clint',
-        enum: ['clinet', 'admin', 'vendor', 'driver'],
-    },
-
-    profile: {
-        type: String,
-        default: "https://unsplash.com/photos/a-man-wearing-glasses-and-a-black-shirt-iEEBWgY_6lA"
-    },
-}, { timestamps: true })
+    
+        userName: {
+          type: String,
+          required: [true, "user name is required"],
+        },
+        email: {
+          type: String,
+          required: [true, "email is required"],
+          unique: true,
+        },
+        password: {
+          type: String,
+          required: [true, "password is required"],
+        },
+        address: {
+          type: Array,
+        },
+        phone: {
+          type: String,
+          required: [true, "phone number is require"],
+        },
+        usertype: {
+          type: String,
+          required: [true, "user type is required"],
+          default: "clinet",
+          enum: ["clinet", "admin", "vendor", "driver"],
+        },
+        profile: {
+          type: String,
+          default:
+            "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_640.png",
+        },
+        
+      },
+ { timestamps: true })
 
 
 const User = mongoose.model('User', userSchema)

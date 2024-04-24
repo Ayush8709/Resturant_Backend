@@ -16,9 +16,13 @@ connactDb()
 
 //file imports
 import testroute from './routes/testRoute.js'
+import register from './routes/authRoutes.js'
+
 
 //Routes
 app.use('/api/v1/test', testroute)
+app.use('/api/v1/auth', register)
+
 
 app.get('/', (req, res) => {
     res.send('Resturant Backend Website is Working');
