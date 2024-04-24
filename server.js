@@ -17,13 +17,13 @@ connactDb()
 //file imports
 import testroute from './routes/testRoute.js'
 import register from './routes/authRoutes.js'
-import hello from './routes/userRoute.js'
+import getuser from './routes/userRoute.js'
 
 
 //Routes
 app.use('/api/v1/test', testroute)
 app.use('/api/v1/auth', register)
-app.use('/api/v1/user', hello )
+app.use('/api/v1/user', getuser)
 
 
 

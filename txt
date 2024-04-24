@@ -4,3 +4,7 @@ post login url:- http://localhost:5000/api/v1/auth/login
 get userdata url :- http://localhost:5000/api/v1/user/getuser
                     and set headr
                       Authorization    bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
+                      
+put updateuser url :- http://localhost:5000/api/v1/user/updateuser
+                      and set headr
+                      Authorization    bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
