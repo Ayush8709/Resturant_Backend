@@ -3,22 +3,22 @@ post sigup url:- http://localhost:5000/api/v1/auth/register
 post login url:- http://localhost:5000/api/v1/auth/login 
 get userdata url :- http://localhost:5000/api/v1/user/getuser
                     and set headr
-                      Authorization    bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
+                      Authorization    Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
                       
 put updateuser url :- http://localhost:5000/api/v1/user/updateuser
                       and set headr
-                      Authorization    bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
+                      Authorization    Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
 
 post passwordUpdaet url :- http://localhost:5000/api/v1/user/updatepassword
                          and set headr
-                      Authorization    bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
+                      Authorization    Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
                                            
                                  "oldPassword" :"aa",
                                  "newPassword":"bb"
                                     
 post passwordReset url:- http://localhost:5000/api/v1/user/resetpassword                                    
                          and set headr
-                      Authorization    bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
+                      Authorization    Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
 
                        "email":"ayush@gmail.com",
                         "answer":"asdfsdfsdfsdfsdaf",
@@ -26,7 +26,7 @@ post passwordReset url:- http://localhost:5000/api/v1/user/resetpassword
 
 delete userDelete url :- http://localhost:5000/api/v1/user/deleteuser/662a15bc52275d45ecc418d4 //this is id of user dataBase                    
                         and set headr
-                      Authorization    bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
+                      Authorization    Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
 
 
 
@@ -40,8 +40,20 @@ get getResturant with url: http://localhost:5000/api/v1/resturant/get/id yaha da
 
 delete deleteResturn url :- http://localhost:5000/api/v1/resturant/delete/ yaha id dall de
                            and set headr
-                      Authorization    bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
+                      Authorization    Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
+############################################################
+
 
 post categoryData url:- http://localhost:5000/api/v1/category/create 
                               and set headr
-                      Authorization    bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10                     
+                      Authorization    Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
+
+get getAllCategory url:- http://localhost:5000/api/v1/category/getall
+
+put updateCategory url:- http://localhost:5000/api/v1/category/update/662a3725655ddf8b7dafde65
+                           and set headr
+                      Authorization    Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MmEyNjNkZTdiNzc5MmQwNGQ1MmNiMiIsImlhdCI6MTcxNDA0MjU5OSwiZXhwIjoxNzE0NjQ3Mzk5fQ.n7VSmvn3XzIUkqQKo8MggEgAhmxEQ1S-dGQu3oby0w8
+
+delete deleteCategory url:- http://localhost:5000/api/v1/category/delete/662a3725655ddf8b7dafde65
+                           and set headr
+                      Authorization    Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MmEyNjNkZTdiNzc5MmQwNGQ1MmNiMiIsImlhdCI6MTcxNDA0MjU5OSwiZXhwIjoxNzE0NjQ3Mzk5fQ.n7VSmvn3XzIUkqQKo8MggEgAhmxEQ1S-dGQu3oby0w8
