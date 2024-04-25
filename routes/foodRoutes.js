@@ -1,7 +1,7 @@
 import express from 'express'
 
 import authMiddleware from '../middlewares/authMiddleware.js';
-import { createFoodController, getAllFoodControlelr, getSingleFoodController , getFoodByResturantController } from '../controllers/foodController.js';
+import { createFoodController, getAllFoodControlelr, getSingleFoodController , getFoodByResturantController , updateFoodController ,deleteFoodController} from '../controllers/foodController.js';
 const router = express()
 
 //Routes
@@ -18,6 +18,11 @@ router.get('/get/:id', getSingleFoodController)
 //Get Food by Resturant
 router.get('/getresturant/:id', getFoodByResturantController)
 
+//update Food
+router.put('/update/:id', authMiddleware, updateFoodController)
+
+//Delete Food
+router.delete("/delete/:id", authMiddleware, deleteFoodController )
 
 
 export default router;
