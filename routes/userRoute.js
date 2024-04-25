@@ -1,5 +1,5 @@
 import express from 'express'
-import {getUserController,updatePasswordController,updateUserController} from '../controllers/userControllers.js';
+import {getUserController,resetPasswordController,updatePasswordController,updateUserController} from '../controllers/userControllers.js';
 import authMiddleware from '../middlewares/authMiddleware.js';
 const router = express()
 
@@ -13,6 +13,6 @@ router.put('/updateuser', authMiddleware,updateUserController )
 router.post('/updatepassword', authMiddleware, updatePasswordController)
 
 //reset password
-router.post('/resetpassword', authMiddleware )
+router.post('/resetpassword', authMiddleware, resetPasswordController )
  
 export default router;

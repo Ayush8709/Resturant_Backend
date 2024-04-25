@@ -8,3 +8,18 @@ get userdata url :- http://localhost:5000/api/v1/user/getuser
 put updateuser url :- http://localhost:5000/api/v1/user/updateuser
                       and set headr
                       Authorization    bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
+
+post passwordUpdaet url :- http://localhost:5000/api/v1/user/updatepassword
+                         and set headr
+                      Authorization    bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
+                                           
+                                 "oldPassword" :"aa",
+                                 "newPassword":"bb"
+                                    
+post passwordReset url:- http://localhost:5000/api/v1/user/resetpassword                                    
+                         and set headr
+                      Authorization    bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
+
+                       "email":"ayush@gmail.com",
+                        "answer":"asdfsdfsdfsdfsdaf",
+                      "newPassword":"cc"
