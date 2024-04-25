@@ -1,5 +1,5 @@
 import express from 'express'
-import { createresturantController } from '../controllers/resturantController.js';
+import { createresturantController,getAllResturantController, getResturantById } from '../controllers/resturantController.js';
 import authMiddleware from '../middlewares/authMiddleware.js';
 const router = express()
 
@@ -7,6 +7,13 @@ const router = express()
 
 //Create REsturant  
 router.post('/create', createresturantController)
+
+
+//Get All Rresturant
+router.get('/getall', getAllResturantController)
+
+// Get Resturant by ID
+router.get('/get/:id', getResturantById)
 
 
 export default router;
