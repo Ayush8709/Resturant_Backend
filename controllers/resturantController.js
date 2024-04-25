@@ -1,3 +1,4 @@
+import resturntModel from '../models/resturantModel.js';
 import resturantModel from '../models/resturantModel.js'
 
 const createresturantController = async (req, res) => {
@@ -116,4 +117,32 @@ const getResturantById = async (req, res) => {
     }
 };
 
-export { createresturantController, getAllResturantController, getResturantById }
+
+// Delete Resturant
+
+const deleteResturantController = async (req, res)=>{
+    try {
+        const resturantId = req.params.id;
+        if (!resturantId) {
+          return res.status(404).send({
+            success: false,
+            message: "No Resturant Found OR Provide Resturant ID",
+          });
+        }
+        await resturantModel.findByIdAndDelete(resturantId);
+        res.status(200).send({
+          success: true,
+          message: "Resturant Deleted Successfully",
+        });
+      } catch (error) {
+        console.log(error);
+        res.status(500).send({
+          success: false,
+          message: "Eror in delete resturant api",
+          error,
+        });
+      }
+    };
+
+    
+export { createresturantController, getAllResturantController, getResturantById , deleteResturantController}
