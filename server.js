@@ -18,12 +18,14 @@ connactDb()
 import testroute from './routes/testRoute.js'
 import register from './routes/authRoutes.js'
 import getuser from './routes/userRoute.js'
+import resturantroutes from './routes/resturantRoute.js'
 
 
 //Routes
 app.use('/api/v1/test', testroute)
 app.use('/api/v1/auth', register)
 app.use('/api/v1/user', getuser)
+app.use('/api/v1/resturant',resturantroutes)
 
 
 
