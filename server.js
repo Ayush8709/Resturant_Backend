@@ -20,6 +20,7 @@ import register from './routes/authRoutes.js'
 import getuser from './routes/userRoute.js'
 import resturantroutes from './routes/resturantRoute.js'
 import category from './routes/categoryRoutes.js'
+import food from './routes/foodRoutes.js'
 
 
 //Routes
@@ -28,6 +29,7 @@ app.use('/api/v1/auth', register)
 app.use('/api/v1/user', getuser)
 app.use('/api/v1/resturant',resturantroutes)
 app.use('/api/v1/category', category)
+app.use('/api/v1/food' , food)
 
 
 

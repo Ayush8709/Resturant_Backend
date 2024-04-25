@@ -57,3 +57,8 @@ put updateCategory url:- http://localhost:5000/api/v1/category/update/662a372565
 delete deleteCategory url:- http://localhost:5000/api/v1/category/delete/662a3725655ddf8b7dafde65
                            and set headr
                       Authorization    Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MmEyNjNkZTdiNzc5MmQwNGQ1MmNiMiIsImlhdCI6MTcxNDA0MjU5OSwiZXhwIjoxNzE0NjQ3Mzk5fQ.n7VSmvn3XzIUkqQKo8MggEgAhmxEQ1S-dGQu3oby0w8
+
+####################################################################################################################
+post foodCreated url:- http://localhost:5000/api/v1/food/create
+                       and set headr
+                      Authorization    Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MmEyNjNkZTdiNzc5MmQwNGQ1MmNiMiIsImlhdCI6MTcxNDA0MjU5OSwiZXhwIjoxNzE0NjQ3Mzk5fQ.n7VSmvn3XzIUkqQKo8MggEgAhmxEQ1S-dGQu3oby0w8
