@@ -1,5 +1,5 @@
 import express from 'express'
-import {getUserController,resetPasswordController,updatePasswordController,updateUserController} from '../controllers/userControllers.js';
+import {deleteProfileControlelr, getUserController,resetPasswordController,updatePasswordController,updateUserController} from '../controllers/userControllers.js';
 import authMiddleware from '../middlewares/authMiddleware.js';
 const router = express()
 
@@ -14,5 +14,9 @@ router.post('/updatepassword', authMiddleware, updatePasswordController)
 
 //reset password
 router.post('/resetpassword', authMiddleware, resetPasswordController )
+
+//delete User
+
+router.delete('/deleteuser/:id', authMiddleware, deleteProfileControlelr)
  
 export default router;

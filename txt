@@ -23,3 +23,7 @@ post passwordReset url:- http://localhost:5000/api/v1/user/resetpassword
                        "email":"ayush@gmail.com",
                         "answer":"asdfsdfsdfsdfsdaf",
                       "newPassword":"cc"
+
+delete userDelete url :- http://localhost:5000/api/v1/user/deleteuser/662a15bc52275d45ecc418d4 //this is id of user dataBase                    
+                        and set headr
+                      Authorization    bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MjhiZWUyMWRhNDlhNmJiMDY0ZGQ1NyIsImlhdCI6MTcxMzk0ODg5MCwiZXhwIjoxNzE0NTUzNjkwfQ.ywycOiu3UmnX5RHTAGKakQrpOC5aurSwn5BNjXPn_10
