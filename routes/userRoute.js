@@ -6,7 +6,7 @@ const router = express()
 // getUser Data
 router.get('/getuser', authMiddleware, getUserController)
 
-//updata User data expact password
+//updata User data not  password
 router.put('/updateuser', authMiddleware, updateUserController)
 
 //update password 
