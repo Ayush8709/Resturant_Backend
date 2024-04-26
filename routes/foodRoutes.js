@@ -1,7 +1,9 @@
 import express from 'express'
 
 import authMiddleware from '../middlewares/authMiddleware.js';
-import { createFoodController, getAllFoodControlelr, getSingleFoodController , getFoodByResturantController , updateFoodController ,deleteFoodController, placeOrderController} from '../controllers/foodController.js';
+import adminMiddleware from '../middlewares/adminMiddleware.js';
+
+import { createFoodController, getAllFoodControlelr, getSingleFoodController , getFoodByResturantController , updateFoodController ,deleteFoodController, placeOrderController, orderStatusController} from '../controllers/foodController.js';
 const router = express()
 
 //Routes
@@ -26,6 +28,9 @@ router.delete("/delete/:id", authMiddleware, deleteFoodController )
 
 // Place Order
 router.post('/placeorder' , authMiddleware, placeOrderController)
+
+//Order Status
+router.post('/orderstatus/:id' , authMiddleware, adminMiddleware, orderStatusController)
 
 
 export default router;
